@@ -1,0 +1,55 @@
+# 每日 AI 科技简报 - 全局配置
+# 复制此文件为 config.yaml 并填入真实凭证
+
+# AI Gateway 配置（文本生成）
+ai_gateway:
+  url: "http://your-ai-gateway/api/v2/llm/chat"
+  auth:
+    token: "YOUR_TOKEN_HERE"
+    uid: "YOUR_UID"
+    product_name: "your_product_name"
+    intention_code: "your_intention_code"
+  model: "glm-5.1"
+  provider: "zhipu"
+  temperature: 0.7
+  max_tokens: 20000
+
+# TTS Gateway 配置（语音合成）
+tts_gateway:
+  url: "http://your-tts-gateway/api/v2/tts/base"
+  auth:
+    token: "YOUR_TOKEN_HERE"
+    uid: "YOUR_UID"
+    product_name: "your_product_name"
+    intention_code: "your_intention_code"
+  model: "speech-01-pro"
+  provider: "minimax"
+  voice_id: "female-shaonv"
+
+# 采集配置
+collector:
+  schedule: "0 8 * * *"  # 每天早上8点采集
+  timeout_seconds: 30
+  max_articles_per_source: 10
+  max_age_hours: 24
+
+# 处理配置
+processor:
+  score_threshold: 0.3
+  dedup_window_hours: 72
+  summary_max_chars: 50
+  max_items_per_issue: 10
+
+# 存储配置
+storage:
+  db_path: "data/digest.db"
+
+# 输出配置
+output:
+  markdown_dir: "data/output/markdown"
+  html_dir: "data/output/html"
+
+# 服务配置
+server:
+  host: "127.0.0.1"
+  port: 8000

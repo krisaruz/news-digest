@@ -1,0 +1,36 @@
+sources:
+  # AI 公司官方
+  - name: "Hacker News AI"
+    url: "https://hnrss.org/newest?q=ai&points=100"
+    category: "ai"
+  - name: "Hacker News LLM"
+    url: "https://hnrss.org/newest?q=llm&points=50"
+    category: "ai"
+  - name: "Reddit LocalLLaMA"
+    url: "https://www.reddit.com/r/LocalLLaMA/.rss"
+    category: "ai"
+  - name: "VentureBeat AI"
+    url: "https://venturebeat.com/category/ai/feed/"
+    category: "ai"
+  - name: "TechCrunch AI"
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    category: "ai"
+  - name: "Ars Technica AI"
+    url: "https://arstechnica.com/tag/artificial-intelligence/feed/"
+    category: "ai"
+
+  # 中文科技 (RSSHub - 可能需要科学上网)
+  - name: "机器之心"
+    url: "https://rsshub.app/jiqizhixin/daily"
+    category: "ai"
+  - name: "36Kr 快讯"
+    url: "https://rsshub.app/36kr/newsflash"
+    category: "tech"
+
+  # 开源
+  - name: "GitHub Trending"
+    url: "https://rsshub.app/github/trending/daily"
+    category: "tech"
+  - name: "Product Hunt"
+    url: "https://rsshub.app/producthunt/today"
+    category: "tech"
